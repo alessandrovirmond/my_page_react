@@ -1,0 +1,364 @@
+:root {
+    --bg-color: #0f172a;
+    --surface-color: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-color: #38bdf8;
+    --accent-hover: #0284c7;
+    --border-color: #334155;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+section {
+    margin-bottom: 40px;
+    background: var(--surface-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+.about-text {
+    color: var(--text-muted);
+    text-align: justify;
+}
+
+.quick-bio {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.quick-bio li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quick-bio strong {
+    color: var(--accent-color);
+}
+
+.tech-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.tech-icons img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
+
+.tech-icons img:hover {
+    transform: translateY(-4px) scale(1.1);
+}
+
+.hobbies-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobbies-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.hobbies-list-wrapper {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hobbies-list {
+    list-style-type: none;
+    padding-left: 0;
+    color: var(--text-muted);
+}
+
+.hobbies-list li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo-carrousel-wrapper {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.photo-gallery {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    gap: 0;
+    padding-bottom: 0;
+    scroll-snap-type: x mandatory;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+.photo-gallery img {
+    height: 400px;
+    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.02);
+}
+
+.photo-gallery:hover {
+    border-color: var(--accent-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: var(--bg-color);
+    color: var(--text-main);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid var(--border-color);
+}
+
+.experience-item, .project-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child, .project-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.job-company {
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.job-date {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
+ul.experience-list {
+    list-style-position: inside;
+    color: var(--text-muted);
+}
+
+ul.experience-list li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+    .contact-info {
+        justify-content: center;
+    }
+    section {
+        padding: 20px;
+    }
+    .tech-icons {
+        justify-content: center;
+    }
+    .hobbies-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hobbies-list-wrapper {
+        min-width: 100%;
+    }
+    .photo-carrousel-wrapper {
+        width: 100%;
+    }
+    .photo-gallery img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .quick-bio li {
+        font-size: 0.95rem;
+        flex-wrap: wrap;
+    }
+    .job-title {
+        font-size: 1.1rem;
+    }
+    .job-header {
+        flex-direction: column;
+    }
+    .photo-gallery img {
+        height: 300px;
+    }
+}
