@@ -5,7 +5,7 @@ import * as Shared from '../../../../styles/Shared.styles';
 export const Skills: React.FC = () => {
   return (
     <Shared.Section id="skills">
-      <Shared.SectionTitle>Competências Técnicas</Shared.SectionTitle>
+      <Shared.AnimatedTitle text='Competências Técnicas'/>
       
       <S.Grid>
         <div>

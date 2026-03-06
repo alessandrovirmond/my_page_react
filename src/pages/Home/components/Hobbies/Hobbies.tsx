@@ -33,7 +33,7 @@ export const Hobbies: React.FC = () => {
 
   return (
     <Shared.Section id="hobbies">
-      <Shared.SectionTitle>Além do Código</Shared.SectionTitle>
+      <Shared.AnimatedTitle text='Além do Código'/>
       
       <S.ContentWrapper>
         <S.TextSide>

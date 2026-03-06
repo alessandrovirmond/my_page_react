@@ -5,7 +5,7 @@ import * as Shared from '../../../../styles/Shared.styles';
 export const Experience: React.FC = () => {
   return (
     <Shared.Section id="experiencia">
-      <Shared.SectionTitle>Experiência Profissional</Shared.SectionTitle>
+      <Shared.AnimatedTitle text='Experiência Profissional'/>
       
       <S.Item>
         <S.Header>

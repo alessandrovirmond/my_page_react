@@ -55,25 +55,22 @@ const projectsData: Project[] = [
     imageUrl: '/assets/projects/iot.png',
     githubUrl: 'https://github.com/alessandrovirmond/App_controle_remoto_de_lampadas',
   }
-  // Você pode adicionar os outros aqui seguindo o mesmo padrão!
 ];
 
 export const Portfolio: React.FC = () => {
   return (
     <Shared.Section id="portifolio">
-      <Shared.SectionTitle>Projetos em Destaque</Shared.SectionTitle>
+      <Shared.AnimatedTitle text='Projetos em Destaque'/>
       
       <S.ProjectsGrid>
         {projectsData.map((project) => (
           <S.ProjectCard key={project.id}>
             
-            {/* Nova área da Imagem */}
             <S.ImageContainer>
               <S.ProjectImage 
                 src={project.imageUrl} 
                 alt={`Print do projeto ${project.title}`} 
                 className="project-img"
-                // Fallback caso a imagem não exista ainda
                 onError={(e) => {
                   e.currentTarget.src = 'https://via.placeholder.com/600x400/1e293b/38bdf8?text=Imagem+Em+Breve';
                 }}
@@ -97,7 +94,6 @@ export const Portfolio: React.FC = () => {
                 ))}
               </S.TechList>
 
-              {/* Novos Botões Footer */}
               <S.CardFooter>
                 {project.githubUrl && (
                   <S.ActionButton href={project.githubUrl} target="_blank" rel="noreferrer">

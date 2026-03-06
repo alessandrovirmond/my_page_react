@@ -16,7 +16,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isHome = true }) => {
     setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      const offset = 90; 
+      const offset = 90;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -43,7 +43,10 @@ export const Navbar: React.FC<NavbarProps> = ({ isHome = true }) => {
     <S.NavContainer>
       <S.NavContent>
         <S.Logo onClick={() => { setIsOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-          A<span>V.</span>
+          <img
+            src="/assets/logo.png"
+            alt="Alessandro Virmond"
+          />
         </S.Logo>
 
         {isHome && (
@@ -55,9 +58,9 @@ export const Navbar: React.FC<NavbarProps> = ({ isHome = true }) => {
         <S.NavLinks>
           {isHome ? (
             sectionIds.map((id) => (
-              <S.NavItem 
+              <S.NavItem
                 key={id}
-                $active={activeSection === id} 
+                $active={activeSection === id}
                 $activeColor={getSectionColor(id)}
                 onClick={() => handleScroll(id)}
               >
@@ -75,9 +78,9 @@ export const Navbar: React.FC<NavbarProps> = ({ isHome = true }) => {
       {isHome && (
         <S.MobileMenu $isOpen={isOpen}>
           {sectionIds.map((id) => (
-            <S.MobileNavItem 
+            <S.MobileNavItem
               key={`mobile-${id}`}
-              $active={activeSection === id} 
+              $active={activeSection === id}
               $activeColor={getSectionColor(id)}
               onClick={() => handleScroll(id)}
             >

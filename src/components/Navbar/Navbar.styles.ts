@@ -25,14 +25,18 @@ export const NavContent = styled.div`
 `;
 
 export const Logo = styled.div`
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #fff;
   cursor: pointer;
-  z-index: 10001; /* Fica acima de tudo, inclusive do menu mobile */
+  z-index: 10001;
   
-  span {
-    color: var(--accent-color);
+  display: flex;
+  align-items: center; 
+  height: 100%;
+
+  img {
+    height: 80px; 
+    width: auto; 
+    display: block;
+    vertical-align: middle;
   }
 `;
 

@@ -5,7 +5,7 @@ import * as SharedStyle from '../../../../styles/Shared.styles'
 export const Summary: React.FC = () => {
   return (
     <SharedStyle.Section id="resumo">
-      <SharedStyle.SectionTitle>Resumo Profissional</SharedStyle.SectionTitle>
+      <SharedStyle.AnimatedTitle text='Resumo Profissional'/>
       
       <Style.QuickBio>
         <li>🎓 <strong>Bacharel em Sistemas de Informação</strong> - CEFET-RJ</li>
