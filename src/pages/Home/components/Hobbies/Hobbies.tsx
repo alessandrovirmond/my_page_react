@@ -57,7 +57,6 @@ export const Hobbies: React.FC = () => {
             <img src="/assets/foto-3.jpeg" alt="Hobbies 2" />
             <img src="/assets/foto-5.jpeg" alt="Hobbies 3" />
             <img src="/assets/foto-2.jpeg" alt="Hobbies 4" />
-            <img src="/assets/foto-6.jpeg" alt="Hobbies 5" />
           </S.PhotoGallery>
         </S.CarouselContainer>
       </S.ContentWrapper>
