@@ -18,6 +18,19 @@ export const TextSide = styled.div`
   }
 `;
 
+export const CarouselSide = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Se você tiver algum estilo específico de largura para telas maiores, 
+     como no caso de dividir a tela entre texto e fotos, coloque aqui */
+  @media (min-width: 768px) {
+    width: 50%; /* Exemplo: metade da tela para o carrossel, metade para o texto */
+  }
+`;
+
 export const HobbiesList = styled.ul`
   list-style: none;
   padding-left: 0;

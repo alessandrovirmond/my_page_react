@@ -1,35 +1,15 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import * as S from './Hobbies.styles';
 import * as Shared from '../../../../styles/Shared.styles';
+import { ImageCarousel } from '../../../../layout/ImageCarousel/ImageCarousel';
 
 export const Hobbies: React.FC = () => {
-  const carrosselRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const carrossel = carrosselRef.current;
-    if (!carrossel) return;
-
-    let scrollAmount = 0;
-
-    const interval = setInterval(() => {
-      const step = carrossel.clientWidth; 
-      const maxScroll = carrossel.scrollWidth - step; 
-      
-      scrollAmount += step;
-
-      if (scrollAmount > maxScroll) {
-          scrollAmount = 0;
-      }
-
-      carrossel.scrollTo({
-          top: 0,
-          left: scrollAmount,
-          behavior: "smooth"
-      });
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
+  const myHobbiesImages = [
+    "/assets/foto-7.jpeg",
+    "/assets/foto-3.jpeg",
+    "/assets/foto-5.jpeg",
+    "/assets/foto-2.jpeg"
+  ];
 
   return (
     <Shared.Section id="hobbies">
@@ -51,14 +31,9 @@ export const Hobbies: React.FC = () => {
           </S.HobbiesList>
         </S.TextSide>
 
-        <S.CarouselContainer>
-          <S.PhotoGallery ref={carrosselRef}>
-            <img src="/assets/foto-7.jpeg" alt="Hobbies 1" />
-            <img src="/assets/foto-3.jpeg" alt="Hobbies 2" />
-            <img src="/assets/foto-5.jpeg" alt="Hobbies 3" />
-            <img src="/assets/foto-2.jpeg" alt="Hobbies 4" />
-          </S.PhotoGallery>
-        </S.CarouselContainer>
+        <S.CarouselSide> 
+          <ImageCarousel images={myHobbiesImages} altPrefix="Hobbies" />
+        </S.CarouselSide>
       </S.ContentWrapper>
     </Shared.Section>
   );
