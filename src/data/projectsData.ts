@@ -36,6 +36,7 @@ export const projectsData: Project[] = [
         '/assets/projects/observatorio_5.png',
     ],
     githubUrl: 'https://github.com/alessandrovirmond/Acessibility_audit',
+    liveUrl: 'https://observatorio.allquestions.eu/',
   },
   {
     id: 'emprestimos',
