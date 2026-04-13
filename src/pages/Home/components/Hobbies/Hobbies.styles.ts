@@ -24,10 +24,8 @@ export const CarouselSide = styled.div`
   justify-content: center;
   align-items: center;
   
-  /* Se você tiver algum estilo específico de largura para telas maiores, 
-     como no caso de dividir a tela entre texto e fotos, coloque aqui */
   @media (min-width: 768px) {
-    width: 50%; /* Exemplo: metade da tela para o carrossel, metade para o texto */
+    width: 50%; 
   }
 `;
 

@@ -29,7 +29,11 @@ export const projectsData: Project[] = [
     description: 'Observatório de Acessibilidade dos Portais Municipais do RJ. Plataforma analítica com dashboard e relatórios.',
     techs: ['Acessibilidade', 'WCAG', 'Dashboard'],
     images: [
-        '/assets/projects/tcc.png',
+        '/assets/projects/observatorio_1.png',
+        '/assets/projects/observatorio_2.png',
+        '/assets/projects/observatorio_3.png',
+        '/assets/projects/observatorio_4.png',
+        '/assets/projects/observatorio_5.png',
     ],
     githubUrl: 'https://github.com/alessandrovirmond/Acessibility_audit',
   },
@@ -60,7 +64,8 @@ export const projectsData: Project[] = [
     description: 'App e sistema embarcado para controle remoto de lâmpadas via MQTT para automação residencial.',
     techs: ['IoT', 'MQTT', 'Orange Pi'],
     images: [
-        '/assets/projects/iot.png',
+        '/assets/projects/orange_1.jpeg',
+        '/assets/projects/orange_2.jpeg',
     ],
     githubUrl: 'https://github.com/alessandrovirmond/App_controle_remoto_de_lampadas',
   }

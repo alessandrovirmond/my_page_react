@@ -23,7 +23,6 @@ export const Hobbies: React.FC = () => {
           <S.HobbiesList>
             <li><span>⭐</span> Botafoguense apaixonado</li>
             <li><span>⚽</span> Peladeiro</li>
-            <li><span>🏋️‍♂️</span> Em busca do shape na musculação</li>
             <li><span>🎮</span> Fifeiro de plantão</li>
             <li><span>🎤</span> Freestyleiro</li>
             <li><span>🏖️</span> Amante de uma boa praia</li>
