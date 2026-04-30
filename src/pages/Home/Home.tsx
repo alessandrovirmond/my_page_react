@@ -14,9 +14,9 @@ export const Home: React.FC = () => {
       <Header />
       <Summary />
       <Skills />
-      <Hobbies />
       <Experience />
       <Portfolio />
+      <Hobbies />
       <Footer />
     </S.Container>
   );

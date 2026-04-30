@@ -9,7 +9,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ isHome = true }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const sectionIds = ['resumo', 'skills', 'hobbies', 'experiencia', 'portifolio'];
+  const sectionIds = ['resumo', 'skills', 'experiencia', 'portifolio', 'hobbies'];
   const activeSection = useActiveSection(sectionIds);
 
   const handleScroll = (id: string) => {
