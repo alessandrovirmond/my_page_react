@@ -2,8 +2,14 @@ import styled from 'styled-components';
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Força exatamente 2 colunas do mesmo tamanho */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+
+  /* Responsividade: No celular, fica 1 bloco por linha para não quebrar o layout */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const CategoryTitle = styled.h3`

@@ -13,7 +13,7 @@ export const projectsData: Project[] = [
     id: 'virmond-chatbot',
     title: 'Virmond AI ChatBot',
     description: 'Aplicação Full-Stack de conversação integrada ao Google Gemini 2.5 Flash. Arquitetura Monorepo com autenticação segura via Clerk, API RESTful blindada e deploy automatizado.',
-    techs: ['React', 'Vite', 'C# .NET 10', 'Docker', 'Clerk'],
+    techs: ['Full Stack','React', 'Vite', 'C# .NET 10', 'Docker', 'Clerk', 'SSO', 'Gemini'],
     images: [
         '/assets/projects/virmond_ia/virmond_ia_01.png', 
         '/assets/projects/virmond_ia/virmond_ia_02.png', 
@@ -25,7 +25,7 @@ export const projectsData: Project[] = [
     id: 'team-draft-engine',
     title: 'Team Draft Engine',
     description: 'Plataforma inteligente para sorteio e balanceamento de times de futebol amador. Utiliza o padrão Strategy no backend para distribuir jogadores de forma justa, baseando-se em idade e posição em campo.',
-    techs: ['Angular 17', 'SCSS', 'Java (Spring)', 'REST API'],
+    techs: ['Full Stack','Angular 17', 'SCSS', 'Java (Spring)', 'REST API', 'PostgreSQL', 'Docker'],
     images: [
       '/assets/projects/team_draft/team_draft.png',
         '/assets/projects/team_draft/team_draft_01.png',
@@ -37,7 +37,7 @@ export const projectsData: Project[] = [
     id: 'iot-lampadas',
     title: 'Orange Pi Automação',
     description: 'App e sistema embarcado para controle remoto de lâmpadas via MQTT para automação residencial.',
-    techs: ['IoT', 'MQTT', 'Orange Pi'],
+    techs: ['IoT', 'C++', 'MQTT', 'Orange Pi'],
     images: [
         '/assets/projects/orange/orange_1.jpeg',
         '/assets/projects/orange/orange_2.jpeg',
@@ -48,7 +48,7 @@ export const projectsData: Project[] = [
     id: 'tcc',
     title: 'Acessibility Audit (TCC)',
     description: 'Observatório de Acessibilidade dos Portais Municipais do RJ. Plataforma analítica com dashboard e relatórios.',
-    techs: ['Acessibilidade', 'WCAG', 'Dashboard'],
+    techs: ['Full Stack', 'Node Express', 'Python', 'Flutter', 'Web Scraping', 'Axe Dev Tools', 'Acessibilidade', 'e-Gov', 'WCAG', 'Dashboard'],
     images: [
         '/assets/projects/observatorio/observatorio_1.png',
         '/assets/projects/observatorio/observatorio_2.png',
@@ -63,7 +63,7 @@ export const projectsData: Project[] = [
     id: 'emprestimos',
     title: 'Sistema de Empréstimos',
     description: 'Projeto Full Stack em TS e PHP para gestão de empréstimos, cálculo de parcelas e relatórios estatísticos.',
-    techs: ['TypeScript', 'PHP', 'Vite', 'Playwright'],
+    techs: ['Full Stack', 'TypeScript', 'PHP', 'MVC', 'Cookies', 'Vite', 'Playwright'],
     images: [
         '/assets/projects/emprestimos.png',
     ],
@@ -73,7 +73,7 @@ export const projectsData: Project[] = [
     id: 'alefood',
     title: 'AleFood',
     description: 'Site React de Restaurantes e seus pratos, integrado com API em Node rodando em docker.',
-    techs: ['React', 'TypeScript', 'Node.js', 'Docker'],
+    techs: ['Front-end', 'React', 'TypeScript', 'Node.js', 'Docker'],
     images: [
         '/assets/projects/alefood/alefood.png', 
     ], 
@@ -84,7 +84,7 @@ export const projectsData: Project[] = [
     id: 'aleroni',
     title: 'Aleroni Router',
     description: 'Site React para cardápio de restaurante, demonstrando domínio de navegação e rotas.',
-    techs: ['React', 'React Router'],
+    techs: ['Front-end','React', 'React Router'],
     images: [
         '/assets/projects/aleroni/aleroni_01.png',
     ],
